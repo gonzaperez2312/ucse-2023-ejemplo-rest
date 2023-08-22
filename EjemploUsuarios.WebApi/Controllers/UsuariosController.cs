@@ -15,7 +15,7 @@ namespace EjemploUsuarios.WebApi.Controllers
         }
 
         [HttpGet("")]
-        public IActionResult ObtenerUsuarios()
+        public IActionResult ObtenerUsuarios([FromQuery(Name = "date_created_from")] DateTime dateCreatedFrom, [FromQuery(Name = "date_created_to")] DateTime dateCreatedTo)
         {
             var usuarios = administrador.ObtenerListadoUsuarios();
             return Ok(usuarios);
