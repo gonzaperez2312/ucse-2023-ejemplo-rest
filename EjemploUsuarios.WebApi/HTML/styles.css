@@ -1,0 +1,18 @@
+#principal {
+    font-size: 55px;
+}
+
+.li-especial {
+    font-size: 5px;
+}
+
+.li-especial ul {
+    font-size: 10px;
+}
+
+.contenedor-titulo {
+    background-color: #941111;
+    border: 1px solid #ccc;
+    padding: 20px;
+    color: white;
+}
